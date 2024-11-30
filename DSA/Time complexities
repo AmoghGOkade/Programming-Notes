@@ -1,0 +1,54 @@
+Search:-
+1) Linear search - Best O(1); Average O(n); Worst O(n)
+2) Binary search - Best O(1); Average O(log n); Worst O(log n)
+
+Sort:-
+1) Selection sort - O(n^2)
+2) Insertion sort - Best O(n); Average O(n^2); Worst O(n^2)
+3) Merge sort - O(n log n)    //Merge takes O(n) and we merge log n times (number of partitions)
+4) Quicksort (built-in sort) - Best O(n log n); Average O(n log n); Worst O(n^2)
+5) Heap sort - O(n log n)
+
+BFS:- adj mat O(n^2); adj list O(m+n); m - number of edges (m<=n^2 for directed)
+DFS:- adj mat O(n^2); adj list O(m+n); m - number of edges (m<=n^2 for directed)
+
+DAG:-
+1) Topological sorting - adj mat O(n^2); adj list O(m+n)
+2) Longest path - adj list O(m+n)
+
+Shortest weighted paths:-
+1) Single source:
+  1.Dijkstra's - adj mat O(n^2); adj list O(n^2); min heap O((m+n) log n)
+  2.Bellman Ford - adj mat O(n^3); adj list O(mn)
+2) All pair:
+  1.Floyd Warshall - adj mat O(n^3); adj list O(n^3)
+
+Minimum cost spanning tree:-
+1) Prim's - adj mat O(n^2); adj list O(n^2); min heap O((m+n) log n)
+2) Kruskal's - adj mat O(n^2); adj list O(n^2); union find O((m+n) log n)    //O(m log m) because of sort, O(n log n) because of union
+
+Priority queues (n^0.5 x n^0.5 matrix):-
+1) Insert O(n^0.5)
+2) Delete_max O(n^0.5)
+
+Heap:-
+1) Insert O(log n)
+2) Delete_max O(log n)
+3) Heapify (construct a heap) O(n)
+4) Heap sort O(n log n)
+5) Find O(n)
+
+Balanced search trees (AVL trees):-
+1) Find O(log n)
+2) Insert O(log n)
+3) Delete O(log n)
+
+Greedy algorithms:-
+1) Interval scheduling - O(n log n)
+2) Huffman coding - frequency array O(k^2); frequency heap O(k log k)
+
+Divide and Conquer:-
+1) Counting inversions - O(n log n)
+2) Closest pair of points - O(n log n)
+3) Integer multiplication (n digits) (Karatsuba's algortihm) - O(n^log3) = O(n^1.59)
+4) Quick select (kth largest integer in list of length n) - O(n); Median of medians - O(n)
