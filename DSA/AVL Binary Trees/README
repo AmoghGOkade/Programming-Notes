@@ -1,5 +1,7 @@
-AVL tree - self balancing tree. Heights of 2 children differ by at most 1.
+AVL tree - self balancing tree. For every node, heights of its left and right subtrees differ by at most 1.
 
 delete() has bugs
 If you insert 10, 20, 30, 40, 50, 25 and then delete 50, 40, 10, no rebalance happens after deleting 40 even though tree is unbalanced.
 Likely because height is not being updated in the right places in the delete() function.
+
+Can do bfs (appending classes node.left and node.right to the queue), dfs and all on a tree also.
