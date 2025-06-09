@@ -1,0 +1,13 @@
+//Vector:-
+M1:- if (find(v.begin(), v.end(), elem) == v.end()) cout<<"Not found\n";
+
+M2:- auto it = find(v.begin(), v.end(), elem);
+if (it != v.end()) cout<<"Found at index " << distance(v.begin(), it);
+
+//Map (both):-
+if (m.find(elem) == m.end()) cout<<"Not found\n";
+
+//Array:-
+auto it = find(arr, arr+n, elem)
+if (distance(arr, it) == n) cout<<"Not found";
+else cout<<"Found at index"<<distance(arr, it);
