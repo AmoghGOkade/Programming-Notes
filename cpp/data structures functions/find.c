@@ -7,6 +7,11 @@ if (it != v.end()) cout<<"Found at index " << distance(v.begin(), it);
 //Map (both):-
 if (m.find(elem) == m.end()) cout<<"Not found\n";
 
+//String:-
+int it = s.find(substr);
+if (it == string::npos) cout<<"Not found";
+else cout<<"Found at position" << it;
+
 //Array:-
 auto it = find(arr, arr+n, elem)
 if (distance(arr, it) == n) cout<<"Not found";
