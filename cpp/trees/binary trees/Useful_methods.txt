@@ -1,0 +1,3 @@
+make_sum_tree:- Change the value of every node to have the sum of the tree nodes whose root that node is.
+Use DFS (preorder/ inorder/ postorder) traversal, while updating each node's value from the bottom up.
+O(N)
