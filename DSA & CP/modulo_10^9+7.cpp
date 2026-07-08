@@ -6,8 +6,10 @@
 
 #define M 1000000007
 
-( a + b) % M = ( ( a % M ) + ( b % M ) ) % M;
-( a * b) % M = ( ( a % M ) * ( b % M ) ) % M;
-( a - b) % M = ( ( a % M ) - ( b % M ) ) % M;
+( a + b ) % M = ( ( a % M ) + ( b % M ) ) % M;
+( a * b ) % M = ( ( a % M ) * ( b % M ) ) % M;
+( a - b ) % M = ( ( a % M ) - ( b % M ) ) % M;
 
 //Better to have a and b as long ints instead of ints to avoid any chance of overflow
+
+( a % b ) != ( a % ( b % M ) );
