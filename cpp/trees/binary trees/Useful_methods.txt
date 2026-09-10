@@ -1,3 +1,14 @@
 make_sum_tree:- Change the value of every node to have the sum of the tree nodes whose root that node is.
 Use DFS (preorder/ inorder/ postorder) traversal, while updating each node's value from the bottom up.
 O(N)
+
+To send some information from bottom to top, use recursions (postorder traversal).
+No need to use another tree for storing such information.
+Return the useful information (in a pair if there is more than 1 piece of information) for the left and right of the node and use it. 
+Have a global variable for taking the decision at each node.
+Good practice (clean steps) - 
+1) Extract the information in 2 temporary variables (left and right) and have variables for storing the return values.
+2) Calculate the final values (to be returned) separately for the 4 cases (l & r exist, only l exists, only r exists, none exist).
+3) Update the global variable at the end, just before returning.
+4) Have a common return statement for all paths for readability.
+Eg:- See 'count_nodes_equal_to_subtree_avg.cpp' (2265. Count Nodes Equal to Average of Subtree).
